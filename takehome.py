@@ -17,7 +17,7 @@ from base_models import Cart
 app = FastAPI()
 BASE_URL = "https://fakestoreapi.com"
 PRODUCTS_FILE = "products.json"
-stripe.api_key = "sk_test_51Q46knEFQgJsDPbW9U6FJQTVp5UAZF6yzxO1eqafzMsYh6e6wUiqBS4V7nzhuZXV2FwxX7nsS8m0SqkZoe4PGPTK008zp0ApCy"
+stripe.api_key = "<your_secret_key>"
 
 @app.get("/products")
 async def get_products(order: Optional[str] = Query("asc", regex="^(asc|desc)$")):
