@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "oneseven"
+version = "0.1.0"
+description = "Take home application for OneSeven Tech"
+authors = ["Micah Forster <mgfos207@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+pytest = "^8.3.3"
+respx = "^0.21.1"
+pytest-asyncio = "^0.24.0"
+stripe = "^10.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
