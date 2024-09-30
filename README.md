@@ -73,11 +73,11 @@ This FastAPI application provides several endpoints to manage products and shopp
 1. Clone the repository.
 2. Install the required dependencies:
    ```sh
-   pip install -r requirements.txt
+   poetry install
    ```
 3. Run the FastAPI application:
    ```sh
-   uvicorn main:app --reload
+   fastapi dev takehome.py
    ```
 
 ## Dependencies
