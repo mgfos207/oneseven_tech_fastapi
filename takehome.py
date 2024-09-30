@@ -82,7 +82,6 @@ async def checkout(user_id: int, cart_id: int):
         user_carts = response.json()
     
     # Find the cart by cart_id
-    print(user_carts, "haha the cart")
     cart = next((c for c in user_carts if c['id'] == cart_id), None)
     if not cart:
         raise HTTPException(status_code=404, detail="Cart not found")
